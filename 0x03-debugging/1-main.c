@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <main.h>
 
 /**
 * main - causes an infinite loop
@@ -13,7 +13,7 @@ int main(void)
 
         i = 0;
 
-        while (i <= 0)
+        while (i < 0)
         {
                 putchar(i);
         }
