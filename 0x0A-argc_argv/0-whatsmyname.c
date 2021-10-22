@@ -1,13 +1,13 @@
-#include <stido.h>
-
+#include <stdio.h>
 /**
-* main - prints its name
-* @argc: int
-* @argv: int
-* Return: int
+* main - entry point
+* @argc:int
+* @argv:char[]
+* Return:int
 */
-int main(__attribute__((unused))int argc, char *argv[])
+int main(int argc, char *argv[])
 {
+if (argc == 1)
 printf("%s\n", argv[0]);
 return (0);
 }
