@@ -3,7 +3,7 @@
  * main - prints the program's own name
  * @argv: array of pointers to strings
  * @argc: argument count
- * return: 0
+ * Return: 0
  */
 int main(__attribute__((unused)) int argc, char *argv[])
 {
