@@ -1,17 +1,16 @@
 #include "main.h"
-#include <stdlib.h>
-#include <stdio.h>
 /**
- * string_nconcat - entry point
- * @n:int
- * @s1:char
- * @s2:char
- * Return:void
+ * string_nconcat - Concats two strings
+ * @n: int
+ * @s1: char
+ * @s2: char
+ * Return: 0
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 char *s;
-unsigned int i, j, k, l;
+unsigned int i, j, x, y;
+
 if (s1 == NULL)
 s1 = "";
 if (s2 == NULL)
@@ -25,10 +24,10 @@ n = j;
 s = malloc(sizeof(char) * (i + n + 1));
 if (s == NULL)
 return (NULL);
-for (k = 0; s1[k] != '\0'; k++)
-s[k] = s1[k];
-for (l = k; l < (i + n); l++)
-s[l] = s2[l - k];
-s[l] = '\0';
+for (x = 0; s1[x] != '\0'; x++)
+s[x] = s1[x];
+for (y = x; y < (i + n); y++)
+s[y] = s2[y - x];
+s[y] = '\0';
 return (s);
 }
